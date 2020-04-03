@@ -77,7 +77,7 @@ numbers.push(4);
 numbers.push(5);
 ```
 위 코드를 작성한 프로그래머는 명확하게 sum은 let을 사용해서 선언했다. 왜냐하면 값을 변경해야 하기 때문에 let으로 선언 해야한다고 이야기한다. 그러나 이 프로그래머는  let를 사용해서 numbers를 틀리게 선언했다. 왜냐하면 그들은 배열에 어떠한 것을 값으로써 change 하기 위해 넣어야(push) 하기 때문에라고 설명한다.<br>
-__하지만 "change"의 명확한 설명은 "memory address"를 변경하는 것이다. let은 메모리 주소를 바꾸는 것을 허락한다. 하지만 const는 메모리 주소를 변경하는 것을 허락하지 않는다 그렇기 때문에 아래 코드는 에러 없이 정상적으로 동작한다.__
+하지만 "change"의 명확한 설명은 "값(Value)"을 변경하는 것이 아니라, __"memory address"를 변경하는 것이다.__ __let은 메모리 주소를 바꾸는 것을 허락한다.__ 하지만 __const는 메모리 주소를 변경하는 것을 허락하지 않는다.__ 그렇기 때문에 아래 코드는 에러 없이 정상적으로 동작한다.
 ```javascript
 const array = [];
 array.push(1);
@@ -88,6 +88,7 @@ array.push(4);
 const myObject = {};
 myObject[['newKey'] = 'someValue'; // This will not throw an Error!
 ```
+배열의 값을 할당하거나, 객체의 멤버를 추가하는 액션은 __"할당 받은 메모리 공간"에 값을 넣는 것이다.__
 
 
 
