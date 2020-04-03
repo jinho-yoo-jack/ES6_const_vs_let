@@ -17,7 +17,7 @@ c = false; // TypeError : Assignment to constant variable
 프로그래머로써, 변수를 선언하고 초기화하거나 그렇지 않거나, 새로운 값을 할당하는 일련의 작업을 우리들은 매일 기본으로 하고 있다. 그러나, 실제로 이것들(변수를 선언하고 초기하고 값을 할당하는 작업들) 실행 될 때 실제로 어떻게 동작하는지 알고 있는가? 너는 JS의 내부 기본 기능들이 어떻게 동작하는지 알고 있는가? 그리고 더 중요한 것은 과연 이러한 내부 기본 기능들의 동작까지 세세하게 안다고 해서 'Javascript'을 이해하고 개발하는 프로그래머(개발자)에게 어떤 도움이 있을까?
 <br>
 
-# 2. 변수 선언 그리고 primitive(7가지 데이터 타입, String, Number, Bigint, Boolean, Null, undefined,symbol) 할당
+# 2. 변수 선언 그리고 primitive할당<br>(Primitive 7가지 데이터 타입, String, Number, Bigint, Boolean, Null, undefined,symbol) 
 아래 간단한 코드를 보자. 아래 코드에서, 우리는 변수를 선언하고 초기화를 했으며, 초기 값은 23으로 할당했고 변수의 이름은 "myNumber"이다.
 ```javascript
 let myNumber = 23;
